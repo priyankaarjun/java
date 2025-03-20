@@ -1,0 +1,13 @@
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int[] score = new int[5];
+        int i;
+        for(i=0;i<5;i++)
+        {
+           System.out.println(i);
+        }
+    }
+    
+}
