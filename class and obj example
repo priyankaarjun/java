@@ -1,0 +1,23 @@
+import java.util.*;
+class Laptop{
+    String name="";
+    String proc="";
+    int ram;
+    int price;
+    public static void main(String args[])
+    {
+        Laptop lap1 = new Laptop();
+        lap1.name = "Dell";
+        lap1.proc = "intel core3";
+        lap1.ram = 8;
+        lap1.price = 20000;
+        
+        Laptop lap2 = new Laptop();
+        lap2.name = "Dell";
+        lap2.proc = "intel core3";
+        lap2.ram = 8;
+        lap2.price = 40000;
+        
+        System.out.println(lap1.price);
+    }
+}
