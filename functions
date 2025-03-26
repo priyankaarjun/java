@@ -1,0 +1,35 @@
+import java.util.*;
+class Demo{
+    public static void greetings()
+    {
+        System.out.println("Welcome");
+    }
+    public static void main(String args[])
+    {
+        greetings();
+    }
+}
+
+or
+
+
+import java.util.*;
+class Mobile{
+    public static void iphone()
+    {
+        System.out.println("This is iphone");
+    }
+    public static void samsung()
+    {
+        System.out.println("This is samsung");
+    }
+    public static void realme()
+    {
+        System.out.println("This is realme");
+    }
+    public static void main(String args[])
+    {
+        Mobile ob1 = new Mobile();
+        ob1.samsung();
+    }
+}
