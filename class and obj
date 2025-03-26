@@ -6,5 +6,8 @@ class Hotel{
     {
         Hotel server1 = new Hotel();
         System.out.println(server1.coffee);
+
+        Hotel server2 = new Hotel();
+        System.out.println(server2.tea);
     }
 }
