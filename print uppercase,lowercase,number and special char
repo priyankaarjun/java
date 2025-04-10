@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String n = sc.nextLine();
+        char ch[] = n.toCharArray();
+        int len = n.length();
+        int up=0;
+        int lc=0;
+        int num=0;
+        int sp=0;
+        for(int i=0;i<len;i++)
+        {
+            if(ch[i]>='A' && ch[i]<='Z')
+            {
+                up++;
+            }
+            else if(ch[i]>='a' && ch[i]<='z')
+            {
+                lc++;
+            }
+            else if(ch[i]>='0' && ch[i]<='9')
+            {
+                num++;
+            }
+            else{
+                sp++;
+            }
+        }
+        System.out.println("Uppercase is: "+up);
+        System.out.println("Lowercase is: "+lc);
+        System.out.println("Number is: " +num);
+        System.out.println("Special Character is :" +sp);
+    }
+}
