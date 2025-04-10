@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String n = sc.nextLine();
+        char ch[] = n.toCharArray();
+        int len = n.length();
+        char target = sc.next().charAt(0);
+        int index=0;
+
+        for(int i=0;i<len;i++)
+        {
+            if(ch[i]==target)
+            {
+                index=i;
+                break;
+            }
+        }
+        if(index!=0)
+        {
+            System.out.println("index is " + index);
+        }
+        else{
+            System.out.println(target);
+        }
+    }
+}
