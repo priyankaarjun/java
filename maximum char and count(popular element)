@@ -18,6 +18,7 @@ public class Main {
             if (c > max) {
                 val = ch[i];
                 max = c;
+
             }
         }
 
