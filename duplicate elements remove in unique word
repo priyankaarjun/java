@@ -1,0 +1,32 @@
+public class Main {
+
+    public static void main(String[] args) {
+        char s[] = "We Like Java".toCharArray(); 
+        int len = s.length;
+
+        char a[][] = new char[100][100]; 
+        int wordIndex = 0;
+        int charIndex = 0;
+
+        for (int i = 0; i < len; i++) {
+            if (s[i] != ' ') {
+                a[wordIndex][charIndex++] = s[i];
+            } else {
+                wordIndex++;
+                charIndex = 0;
+            }
+        }
+        wordIndex++; 
+        for (int i = 0; i < wordIndex; i++) {
+            int b[] = new int[256]; 
+            for (int j = 0; j < 100 && a[i][j] != 0; j++) {
+                char ch = a[i][j];
+                if (b[ch] == 0) {
+                    System.out.print(ch); 
+                    b[ch] = 1;
+                }
+            }
+            System.out.print(" ");
+        }
+    }
+}
