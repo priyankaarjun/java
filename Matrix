@@ -1,0 +1,71 @@
+import java.util.*;
+class Matrix{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int r=sc.nextInt();
+        int c=sc.nextInt();
+        int arr[][] = new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        // Printing the matrix
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+        // Finding the sum of all elements in the matrix
+        int sum = 0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                sum += arr[i][j];
+            }
+        }
+        System.out.println("Sum of all elements: " + sum);
+        // Finding the maximum elements in the matrix
+        int max = arr[0][0];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if(arr[i][j] > max){
+                    max = arr[i][j];
+                }
+            }
+        }
+        System.out.println("Maximum element: " + max);
+
+        // Finding the minimum element in the matrix
+        int min = arr[0][0];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if(arr[i][j] < min){
+                    min = arr[i][j];
+                }
+            }
+        }
+        System.out.println("Minimum element: " + min);
+
+        // Transpose of the matrix
+        for(int j=0;j<c;j++){
+            for(int i=0;i<r;i++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+        // Multiplication of matrix
+        int num = sc.nextInt();
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j] *= num;
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
